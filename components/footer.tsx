@@ -12,7 +12,7 @@ const navLinks = [
 ]
 
 const productLinks = [
-    { title: 'ServAfri Cloud', href: '/products/servafri' },
+    { title: 'Big7 Cloud', href: '/products/cloud' },
     { title: 'BigBoost Media', href: '/products/bigboost' },
     { title: 'Systems Research', href: 'https://research.big7technologies.com' }
 ]

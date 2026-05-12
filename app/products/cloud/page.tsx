@@ -10,7 +10,7 @@ import Link from 'next/link'
 import Image from 'next/image'
 import { MetricsSection } from '@/components/metrics-section'
 
-export default function ServAfriProductPage() {
+export default function CloudProductPage() {
     return (
         <div className="min-h-screen bg-background text-foreground selection:bg-primary/30">
             <HeroHeader />
@@ -36,7 +36,7 @@ export default function ServAfriProductPage() {
                                     animate={{ opacity: 1, y: 0 }}
                                     className="text-5xl md:text-7xl font-bold tracking-tight"
                                 >
-                                    ServAfri
+                                    Big7 Cloud
                                 </motion.h1>
                                 
                                 <motion.p 
@@ -56,8 +56,8 @@ export default function ServAfriProductPage() {
                                 >
                                     <div className="bg-foreground/5 rounded-[calc(var(--radius-lg)+0.125rem)] border p-0.5">
                                         <Button asChild size="lg" className="rounded-lg px-8 py-6 font-bold shadow-xl transition-all hover:scale-105">
-                                            <Link href="https://servafri.com" target="_blank">
-                                                Explore servafri.com <ArrowRight className="ml-2 size-4" />
+                                            <Link href="https://big7technologies.com" target="_blank">
+                                                Explore big7technologies.com <ArrowRight className="ml-2 size-4" />
                                             </Link>
                                         </Button>
                                     </div>
@@ -72,8 +72,8 @@ export default function ServAfriProductPage() {
                             >
                                 <div className="relative aspect-[4/5] rounded-[2rem] overflow-hidden shadow-2xl border border-primary/10 bg-primary/5">
                                     <Image 
-                                        src="/servafri-hero.jpg" 
-                                        alt="ServAfri Cloud Infrastructure" 
+                                        src="/Big7 Technologies-hero.jpg" 
+                                        alt="Big7 Cloud Infrastructure" 
                                         fill 
                                         className="object-cover"
                                         priority
@@ -92,7 +92,7 @@ export default function ServAfriProductPage() {
                             <div className="space-y-6">
                                 <h2 className="text-3xl font-bold tracking-tight">The History</h2>
                                 <p className="text-lg text-muted-foreground leading-relaxed">
-                                    Founded in 2024, ServAfri was born from a vision to localize high-performance computing on the continent. Established to bridge the infrastructure gap, ensuring that African innovators have the speed and reliability required to build global-scale applications.
+                                    Founded in 2024, Big7 Technologies was born from a vision to localize high-performance computing on the continent. Established to bridge the infrastructure gap, ensuring that African innovators have the speed and reliability required to build global-scale applications.
                                 </p>
                             </div>
                             <div className="space-y-6">
@@ -101,17 +101,17 @@ export default function ServAfriProductPage() {
                                     In the heart of Africa's digital revolution, we identified a massive infrastructure gap. Developers were forced to rely on distant servers, leading to slow performance and complex global payment hurdles.
                                 </p>
                                 <p className="text-lg text-muted-foreground leading-relaxed">
-                                    ServAfri was built to bridge this divide—creating a localized, sovereign cloud engine that allows the continent's engineers to deploy, scale, and innovate on home soil without friction.
+                                    Big7 Cloud was built to bridge this divide—creating a localized, sovereign cloud engine that allows the continent's engineers to deploy, scale, and innovate on home soil without friction.
                                 </p>
                             </div>
                         </div>
                     </div>
                 </section>
 
-                {/* WHY CHOOSE SERVAFRI */}
+                {/* WHY CHOOSE Big7 Technologies */}
                 <section className="py-24 bg-muted/20 border-y border-muted/50">
                     <div className="mx-auto max-w-6xl px-6">
-                        <h2 className="text-center text-4xl font-bold mb-16">Why Choose ServAfri?</h2>
+                        <h2 className="text-center text-4xl font-bold mb-16">Why Choose Big7 Cloud?</h2>
                         <div className="grid md:grid-cols-3 gap-12 text-center">
                             <div className="space-y-4">
                                 <div className="mx-auto size-12 rounded-2xl bg-primary/10 flex items-center justify-center">

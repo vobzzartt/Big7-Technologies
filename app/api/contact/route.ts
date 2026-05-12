@@ -21,7 +21,7 @@ export async function POST(req: Request) {
       from: 'Big7 Technologies <onboarding@resend.dev>',
       to: email,
       subject: 'Inquiry Received - Big7 Technologies',
-      text: `Hello ${name},\n\nThank you for reaching out to Big7 Technologies. We have received your inquiry regarding "${subject}".\n\nOur engineering team will review your message and get back to you within 24 hours.\n\nBest regards,\David`,
+      text: `Hello ${name},\n\nThank you for reaching out to Big7 Technologies. We have received your inquiry regarding "${subject}".\n\nOur engineering team will review your message and get back to you within 24 hours.\n\nBest regards,\nBig7 Lab Team`,
     });
 
     return NextResponse.json({ success: true });

@@ -5,7 +5,7 @@ export function jobApplicantEmailTemplate(name: string, role: string): string {
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Application Received - ServAfri</title>
+  <title>Application Received - Big7 Technologies</title>
 </head>
 <body style="margin: 0; padding: 0; background-color: #f9fafb; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;">
   <table width="100%" cellpadding="0" cellspacing="0" border="0" style="background-color: #f9fafb;">
@@ -14,16 +14,16 @@ export function jobApplicantEmailTemplate(name: string, role: string): string {
         <table width="100%" cellpadding="0" cellspacing="0" border="0" style="max-width: 600px; background-color: #ffffff; border-radius: 12px; border: 1px solid #e2e8f0; text-align: left;">
           <tr>
             <td style="padding: 40px;">
-              <div style="font-size: 20px; font-weight: 800; color: #f97316; margin-bottom: 32px;">ServAfri</div>
+              <div style="font-size: 20px; font-weight: 800; color: #f97316; margin-bottom: 32px;">Big7 Technologies</div>
               <h1 style="margin: 0 0 20px 0; font-size: 24px; font-weight: 700; color: #0f172a; letter-spacing: -0.02em;">We've received your application, ${name.split(' ')[0]}.</h1>
               <p style="margin: 0 0 32px 0; font-size: 16px; line-height: 1.6; color: #475569;">
-                Thank you for applying for the <strong>${role}</strong> position at ServAfri. We're excited to learn more about you and your potential to help us build the future of African cloud infrastructure.
+                Thank you for applying for the <strong>${role}</strong> position at Big7 Technologies. We're excited to learn more about you and your potential to help us build the future of African cloud infrastructure.
               </p>
               <div style="background-color: #f8fafc; border-radius: 8px; border: 1px solid #e2e8f0; padding: 24px; margin-bottom: 32px;">
                 <p style="margin: 0; font-size: 14px; font-weight: 600; color: #94a3b8; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 8px;">Next Steps</p>
                 <p style="margin: 0; font-size: 15px; color: #334155; line-height: 1.5;">Our recruitment team will review your profile and resume. You can expect to hear back from us with feedback or next steps via this email within <strong>48 hours</strong>.</p>
               </div>
-              <p style="margin: 0; font-size: 15px; color: #64748b;">Best regards,<br>ServAfri Recruitment Team</p>
+              <p style="margin: 0; font-size: 15px; color: #64748b;">Best regards,<br>Big7 Technologies Recruitment Team</p>
             </td>
           </tr>
         </table>

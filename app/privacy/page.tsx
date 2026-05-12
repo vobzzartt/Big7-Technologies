@@ -3,8 +3,8 @@ import FooterSection from '@/components/footer'
 import { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Privacy Policy | ServAfri',
-  description: 'Privacy Policy for ServAfri cloud platform',
+  title: 'Privacy Policy | Big7 Technologies',
+  description: 'Privacy Policy for Big7 Technologies cloud platform',
 }
 
 export default function PrivacyPolicy() {
@@ -23,7 +23,7 @@ export default function PrivacyPolicy() {
           <section className="mb-12">
             <h2 className="text-2xl font-semibold mb-4">1. Introduction</h2>
             <p className="mb-4 leading-relaxed text-foreground/90">
-              ServAfri (&quot;we&quot;, &quot;our&quot;, or &quot;us&quot;) operates a cloud infrastructure platform. This Privacy Policy explains how we collect, use, disclose, and protect your information when you use our services.
+              Big7 Technologies (&quot;we&quot;, &quot;our&quot;, or &quot;us&quot;) operates a cloud infrastructure platform. This Privacy Policy explains how we collect, use, disclose, and protect your information when you use our services.
             </p>
           </section>
 
@@ -167,10 +167,10 @@ export default function PrivacyPolicy() {
               If you have questions about this Privacy Policy or our data practices, please contact us at:
             </p>
             <p className="mb-2 leading-relaxed text-foreground/90">
-              Email: <a href="mailto:privacy@servafri.com" className="text-primary hover:underline">privacy@servafri.com</a>
+              Email: <a href="mailto:privacy@Big7 Technologies.com" className="text-primary hover:underline">privacy@Big7 Technologies.com</a>
             </p>
             <p className="mb-4 leading-relaxed text-foreground/90">
-              Website: <a href="https://servafri.com/contact" className="text-primary hover:underline">https://servafri.com/contact</a>
+              Website: <a href="https://Big7 Technologies.com/contact" className="text-primary hover:underline">https://Big7 Technologies.com/contact</a>
             </p>
           </section>
             </div>

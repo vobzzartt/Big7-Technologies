@@ -3,8 +3,8 @@ import FooterSection from '@/components/footer'
 import { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Terms of Service | ServAfri',
-  description: 'Terms of Service for ServAfri cloud platform',
+  title: 'Terms of Service | Big7 Technologies',
+  description: 'Terms of Service for Big7 Technologies cloud platform',
 }
 
 export default function TermsOfService() {
@@ -23,10 +23,10 @@ export default function TermsOfService() {
           <section className="mb-12">
             <h2 className="text-2xl font-semibold mb-4">1. Agreement to Terms</h2>
             <p className="mb-4 leading-relaxed text-foreground/90">
-              By accessing or using ServAfri services (&quot;Services&quot;), you agree to be bound by these Terms of Service (&quot;Terms&quot;). If you do not agree to these Terms, you may not use our Services.
+              By accessing or using Big7 Technologies services (&quot;Services&quot;), you agree to be bound by these Terms of Service (&quot;Terms&quot;). If you do not agree to these Terms, you may not use our Services.
             </p>
             <p className="mb-4 leading-relaxed text-foreground/90">
-              These Terms constitute a legally binding agreement between you and ServAfri. We reserve the right to modify these Terms at any time. Continued use of the Services after changes constitutes acceptance of the modified Terms.
+              These Terms constitute a legally binding agreement between you and Big7 Technologies. We reserve the right to modify these Terms at any time. Continued use of the Services after changes constitutes acceptance of the modified Terms.
             </p>
           </section>
 
@@ -126,7 +126,7 @@ export default function TermsOfService() {
           <section className="mb-12">
             <h2 className="text-2xl font-semibold mb-4">8. Intellectual Property</h2>
             <p className="mb-4 leading-relaxed text-foreground/90">
-              The Services and all associated intellectual property rights are owned by ServAfri or our licensors. These Terms do not grant you any rights to our trademarks, logos, or branding. All rights not expressly granted are reserved.
+              The Services and all associated intellectual property rights are owned by Big7 Technologies or our licensors. These Terms do not grant you any rights to our trademarks, logos, or branding. All rights not expressly granted are reserved.
             </p>
           </section>
 
@@ -170,7 +170,7 @@ export default function TermsOfService() {
           <section className="mb-12">
             <h2 className="text-2xl font-semibold mb-4">13. Limitation of Liability</h2>
             <p className="mb-4 leading-relaxed text-foreground/90 uppercase">
-              TO THE MAXIMUM EXTENT PERMITTED BY LAW, SERVAFRI SHALL NOT BE LIABLE FOR ANY INDIRECT, INCIDENTAL, SPECIAL, CONSEQUENTIAL, OR PUNITIVE DAMAGES, OR ANY LOSS OF PROFITS, REVENUE, DATA, OR USE, WHETHER IN CONTRACT, TORT, OR OTHERWISE, ARISING FROM YOUR USE OF THE SERVICES.
+              TO THE MAXIMUM EXTENT PERMITTED BY LAW, Big7 Technologies SHALL NOT BE LIABLE FOR ANY INDIRECT, INCIDENTAL, SPECIAL, CONSEQUENTIAL, OR PUNITIVE DAMAGES, OR ANY LOSS OF PROFITS, REVENUE, DATA, OR USE, WHETHER IN CONTRACT, TORT, OR OTHERWISE, ARISING FROM YOUR USE OF THE SERVICES.
             </p>
             <p className="mb-4 leading-relaxed text-foreground/90 uppercase">
               OUR TOTAL LIABILITY TO YOU FOR ANY CLAIMS ARISING FROM THESE TERMS OR YOUR USE OF THE SERVICES SHALL NOT EXCEED THE AMOUNT YOU PAID US IN THE TWELVE MONTHS PRECEDING THE CLAIM.
@@ -180,14 +180,14 @@ export default function TermsOfService() {
           <section className="mb-12">
             <h2 className="text-2xl font-semibold mb-4">14. Indemnification</h2>
             <p className="mb-4 leading-relaxed text-foreground/90">
-              You agree to indemnify and hold harmless ServAfri and its officers, directors, employees, and agents from any claims, damages, losses, and expenses (including legal fees) arising from your use of the Services, Your Content, or your violation of these Terms.
+              You agree to indemnify and hold harmless Big7 Technologies and its officers, directors, employees, and agents from any claims, damages, losses, and expenses (including legal fees) arising from your use of the Services, Your Content, or your violation of these Terms.
             </p>
           </section>
 
           <section className="mb-12">
             <h2 className="text-2xl font-semibold mb-4">15. Dispute Resolution</h2>
             <p className="mb-4 leading-relaxed text-foreground/90">
-              These Terms shall be governed by and construed in accordance with the laws of the jurisdiction in which ServAfri operates, without regard to conflict of law provisions.
+              These Terms shall be governed by and construed in accordance with the laws of the jurisdiction in which Big7 Technologies operates, without regard to conflict of law provisions.
             </p>
             <p className="mb-4 leading-relaxed text-foreground/90">
               Any disputes arising from these Terms or the Services shall be resolved through binding arbitration, except that either party may seek injunctive relief in court. You waive any right to participate in class action lawsuits or class-wide arbitration.
@@ -199,7 +199,7 @@ export default function TermsOfService() {
             
             <h3 className="text-xl font-medium mb-3 mt-6">16.1 Entire Agreement</h3>
             <p className="mb-4 leading-relaxed text-foreground/90">
-              These Terms, along with our Privacy Policy and Acceptable Use Policy, constitute the entire agreement between you and ServAfri regarding the Services.
+              These Terms, along with our Privacy Policy and Acceptable Use Policy, constitute the entire agreement between you and Big7 Technologies regarding the Services.
             </p>
 
             <h3 className="text-xl font-medium mb-3 mt-6">16.2 Severability</h3>
@@ -224,10 +224,10 @@ export default function TermsOfService() {
               If you have questions about these Terms, please contact us at:
             </p>
             <p className="mb-2 leading-relaxed text-foreground/90">
-              Email: <a href="mailto:legal@servafri.com" className="text-primary hover:underline">legal@servafri.com</a>
+              Email: <a href="mailto:legal@Big7 Technologies.com" className="text-primary hover:underline">legal@Big7 Technologies.com</a>
             </p>
             <p className="mb-4 leading-relaxed text-foreground/90">
-              Website: <a href="https://servafri.com/contact" className="text-primary hover:underline">https://servafri.com/contact</a>
+              Website: <a href="https://Big7 Technologies.com/contact" className="text-primary hover:underline">https://Big7 Technologies.com/contact</a>
             </p>
           </section>
             </div>

@@ -6,7 +6,7 @@ export function confirmationEmailTemplate(name: string): string {
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Welcome to ServAfri</title>
+  <title>Welcome to Big7 Technologies</title>
 </head>
 <body style="margin: 0; padding: 0; background-color: #f9fafb; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; -webkit-font-smoothing: antialiased;">
   <table width="100%" cellpadding="0" cellspacing="0" border="0" style="background-color: #f9fafb;">
@@ -18,7 +18,7 @@ export function confirmationEmailTemplate(name: string): string {
               
               <!-- Brand Name -->
               <div style="margin-bottom: 24px; font-size: 18px; font-weight: 700; color: #0f172a; letter-spacing: -0.5px; opacity: 0.9;">
-                ServAfri
+                Big7 Technologies
               </div>
 
               <!-- Heading -->
@@ -36,7 +36,7 @@ export function confirmationEmailTemplate(name: string): string {
               </p>
 
               <p style="margin: 0 0 32px 0; font-size: 16px; color: #475569; line-height: 1.6;">
-                ServAfri is built to remove the complexity, high costs, and latency challenges developers face with global cloud platforms — replacing them with something faster, simpler, and truly local.
+                Big7 Technologies is built to remove the complexity, high costs, and latency challenges developers face with global cloud platforms — replacing them with something faster, simpler, and truly local.
               </p>
 
               <div style="background-color: #fff7ed; color: #ea580c; border: 1px solid #fed7aa; padding: 12px 16px; border-radius: 8px; font-size: 15px; font-weight: 600; margin-bottom: 32px; display: inline-block;">
@@ -59,27 +59,27 @@ export function confirmationEmailTemplate(name: string): string {
               <table border="0" cellpadding="0" cellspacing="0" style="margin-bottom: 32px;">
                 <tr>
                   <td style="padding-right: 16px;">
-                    <a href="https://instagram.com/servafri_" style="text-decoration: none;">
+                    <a href="https://instagram.com/Big7 Technologies_" style="text-decoration: none;">
                       <img src="https://img.icons8.com/material-rounded/48/f97316/instagram-new.png" width="22" height="22" alt="Instagram" style="display: block;" />
                     </a>
                   </td>
                   <td style="padding-right: 16px;">
-                    <a href="https://www.linkedin.com/company/servafrihq/" style="text-decoration: none;">
+                    <a href="https://www.linkedin.com/company/Big7 Technologieshq/" style="text-decoration: none;">
                       <img src="https://img.icons8.com/material-rounded/48/f97316/linkedin.png" width="22" height="22" alt="LinkedIn" style="display: block;" />
                     </a>
                   </td>
                   <td style="padding-right: 16px;">
-                    <a href="https://x.com/Servafri" style="text-decoration: none;">
+                    <a href="https://x.com/Big7 Technologies" style="text-decoration: none;">
                       <img src="https://img.icons8.com/material-rounded/48/f97316/twitter.png" width="22" height="22" alt="X" style="display: block;" />
                     </a>
                   </td>
                   <td style="padding-right: 16px;">
-                    <a href="https://github.com/servafri" style="text-decoration: none;">
+                    <a href="https://github.com/Big7 Technologies" style="text-decoration: none;">
                       <img src="https://img.icons8.com/material-rounded/48/f97316/github.png" width="22" height="22" alt="GitHub" style="display: block;" />
                     </a>
                   </td>
                   <td style="font-size: 13px; color: #94a3b8; font-weight: 600; vertical-align: middle; letter-spacing: 0.2px;">
-                    @Servafri
+                    @Big7 Technologies
                   </td>
                 </tr>
               </table>

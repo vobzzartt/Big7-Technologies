@@ -18,7 +18,7 @@ export function founderEmailTemplate(name: string): string {
               
               <!-- Brand Name -->
               <div style="margin-bottom: 24px; font-size: 18px; font-weight: 700; color: #0f172a; letter-spacing: -0.5px; opacity: 0.9;">
-                ServAfri
+                Big7 Technologies
               </div>
 
               <!-- Heading -->
@@ -28,11 +28,11 @@ export function founderEmailTemplate(name: string): string {
 
               <!-- Content -->
               <p style="margin: 0 0 24px 0; font-size: 16px; color: #475569; line-height: 1.6;">
-                Hi ${firstName}, I'm Victor Bodude the Founder of Servafri.
+                Hi ${firstName}, I'm Victor Bodude the Founder of Big7 Technologies.
               </p>
 
               <p style="margin: 0 0 24px 0; font-size: 16px; color: #475569; line-height: 1.6;">
-                I didn't start ServAfri because I wanted to build a company. I started it because deploying and running infrastructure here felt harder than it should be.
+                I didn't start Big7 Technologies because I wanted to build a company. I started it because deploying and running infrastructure here felt harder than it should be.
               </p>
 
               <p style="margin: 0 0 24px 0; font-size: 16px; color: #475569; line-height: 1.6;">
@@ -40,7 +40,7 @@ export function founderEmailTemplate(name: string): string {
               </p>
 
               <p style="margin: 0 0 24px 0; font-size: 16px; color: #475569; line-height: 1.6;">
-                ServAfri is our attempt to fix that.
+                Big7 Technologies is our attempt to fix that.
               </p>
               
               <p style="margin: 0 0 24px 0; font-size: 16px; color: #475569; line-height: 1.6;">
@@ -58,13 +58,13 @@ export function founderEmailTemplate(name: string): string {
               </p>
 
               <p style="margin: 0 0 24px 0; font-size: 16px; color: #475569; line-height: 1.6;">
-                If you want to read the full story behind ServAfri, you can do that here:
+                If you want to read the full story behind Big7 Technologies, you can do that here:
               </p>
 
               <table border="0" cellpadding="0" cellspacing="0" style="margin-bottom: 40px;">
                 <tr>
                   <td align="left">
-                    <a href="https://victorbodude.hashnode.dev/rebuilding-africas-cloud-future-the-servafri-story" style="background-color: #f97316; color: #ffffff; display: inline-block; padding: 12px 24px; font-size: 15px; font-weight: 600; text-decoration: none; border-radius: 8px;">
+                    <a href="https://victorbodude.hashnode.dev/rebuilding-africas-cloud-future-the-Big7 Technologies-story" style="background-color: #f97316; color: #ffffff; display: inline-block; padding: 12px 24px; font-size: 15px; font-weight: 600; text-decoration: none; border-radius: 8px;">
                       Read the full story
                     </a>
                   </td>
@@ -83,7 +83,7 @@ export function founderEmailTemplate(name: string): string {
                     <div style="font-size: 14px; color: #94a3b8; margin-top: 4px; margin-bottom: 12px;">FOUNDER</div>
                     <a href="mailto:victorbodude@gmail.com" style="color: #475569; font-size: 14px; text-decoration: none;">victorbodude@gmail.com</a>
                     <span style="color: #e2e8f0; margin: 0 8px;">|</span>
-                    <a href="https://servafri.com" style="color: #475569; font-size: 14px; text-decoration: none;">servafri.com</a>
+                    <a href="https://Big7 Technologies.com" style="color: #475569; font-size: 14px; text-decoration: none;">Big7 Technologies.com</a>
                     
                     <!-- Personal Social Icons -->
                     <div style="margin-top: 24px;">
@@ -127,7 +127,7 @@ export function founderEmailTemplate(name: string): string {
         <table width="100%" cellpadding="0" cellspacing="0" border="0" style="max-width: 600px; text-align: center; margin-top: 16px;">
           <tr>
             <td style="font-size: 11px; color: #94a3b8;">
-              &copy; ${new Date().getFullYear()} ServAfri. All rights reserved.
+              &copy; ${new Date().getFullYear()} Big7 Technologies. All rights reserved.
             </td>
           </tr>
         </table>

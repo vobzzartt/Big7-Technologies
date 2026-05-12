@@ -3,8 +3,8 @@ import FooterSection from '@/components/footer'
 import { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Acceptable Use Policy | ServAfri',
-  description: 'Acceptable Use Policy for ServAfri cloud platform',
+  title: 'Acceptable Use Policy | Big7 Technologies',
+  description: 'Acceptable Use Policy for Big7 Technologies cloud platform',
 }
 
 export default function AcceptableUsePolicy() {
@@ -23,7 +23,7 @@ export default function AcceptableUsePolicy() {
           <section className="mb-12">
             <h2 className="text-2xl font-semibold mb-4">1. Purpose</h2>
             <p className="mb-4 leading-relaxed text-foreground/90">
-              This Acceptable Use Policy (&quot;Policy&quot;) governs your use of ServAfri services. Violations of this Policy may result in suspension or termination of your account without notice.
+              This Acceptable Use Policy (&quot;Policy&quot;) governs your use of Big7 Technologies services. Violations of this Policy may result in suspension or termination of your account without notice.
             </p>
           </section>
 
@@ -137,7 +137,7 @@ export default function AcceptableUsePolicy() {
               If you become aware of any violations of this Policy, please report them to us immediately at:
             </p>
             <p className="mb-4 leading-relaxed text-foreground/90">
-              Email: <a href="mailto:abuse@servafri.com" className="text-primary hover:underline">abuse@servafri.com</a>
+              Email: <a href="mailto:abuse@Big7 Technologies.com" className="text-primary hover:underline">abuse@Big7 Technologies.com</a>
             </p>
             <p className="mb-4 leading-relaxed text-foreground/90">
               Include as much detail as possible, including account information, dates, times, and any supporting documentation.
@@ -168,7 +168,7 @@ export default function AcceptableUsePolicy() {
               If you believe an enforcement action was taken in error, you may appeal by contacting us at:
             </p>
             <p className="mb-4 leading-relaxed text-foreground/90">
-              Email: <a href="mailto:appeals@servafri.com" className="text-primary hover:underline">appeals@servafri.com</a>
+              Email: <a href="mailto:appeals@Big7 Technologies.com" className="text-primary hover:underline">appeals@Big7 Technologies.com</a>
             </p>
             <p className="mb-4 leading-relaxed text-foreground/90">
               Include your account information and a detailed explanation of why you believe the action was incorrect. We will review appeals promptly and respond within a reasonable timeframe.
@@ -201,10 +201,10 @@ export default function AcceptableUsePolicy() {
               For questions about this Policy, contact us at:
             </p>
             <p className="mb-2 leading-relaxed text-foreground/90">
-              Email: <a href="mailto:legal@servafri.com" className="text-primary hover:underline">legal@servafri.com</a>
+              Email: <a href="mailto:legal@Big7 Technologies.com" className="text-primary hover:underline">legal@Big7 Technologies.com</a>
             </p>
             <p className="mb-4 leading-relaxed text-foreground/90">
-              Website: <a href="https://servafri.com/contact" className="text-primary hover:underline">https://servafri.com/contact</a>
+              Website: <a href="https://Big7 Technologies.com/contact" className="text-primary hover:underline">https://Big7 Technologies.com/contact</a>
             </p>
           </section>
             </div>

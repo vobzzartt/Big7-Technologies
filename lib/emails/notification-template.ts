@@ -27,7 +27,7 @@ export function notificationEmailTemplate(name: string, email: string): string {
               
               <!-- Brand Name -->
               <div style="margin-bottom: 24px; font-size: 18px; font-weight: 700; color: #0f172a; letter-spacing: -0.5px; opacity: 0.9;">
-                ServAfri
+                Big7 Technologies
               </div>
 
               <!-- Heading -->

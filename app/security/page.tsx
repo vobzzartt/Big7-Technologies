@@ -5,8 +5,8 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/com
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Security | ServAfri',
-  description: 'Security practices and controls at ServAfri. Learn about data encryption, access control, network security, compliance, and incident response.',
+  title: 'Security | Big7 Technologies',
+  description: 'Security practices and controls at Big7 Technologies. Learn about data encryption, access control, network security, compliance, and incident response.',
 }
 
 export default function SecurityPage() {
@@ -19,7 +19,7 @@ export default function SecurityPage() {
             <div className="space-y-6">
               <h1 className="text-4xl font-medium lg:text-5xl">Security</h1>
               <p className="text-lg text-muted-foreground max-w-3xl">
-                Security is fundamental to everything we build at ServAfri. We maintain strict controls, regular audits, and transparent practices to protect your infrastructure and data.
+                Security is fundamental to everything we build at Big7 Technologies. We maintain strict controls, regular audits, and transparent practices to protect your infrastructure and data.
               </p>
             </div>
 
@@ -214,8 +214,8 @@ export default function SecurityPage() {
                   <h3 className="font-medium">Reporting Security Issues</h3>
                   <p className="text-sm text-muted-foreground">
                     If you discover a security vulnerability, please report it to{' '}
-                    <a href="mailto:security@servafri.com" className="text-primary hover:underline">
-                      security@servafri.com
+                    <a href="mailto:security@Big7 Technologies.com" className="text-primary hover:underline">
+                      security@Big7 Technologies.com
                     </a>
                     . We appreciate responsible disclosure and will work with you to address any issues promptly.
                   </p>

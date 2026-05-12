@@ -38,49 +38,41 @@ export default function ProductsPage() {
                     </div>
 
                     <div className="grid gap-12">
-                        {/* ServAfri Product Card */}
+                        {/* Big7 Cloud Product Card */}
                         <motion.div
                             initial={{ opacity: 0, y: 40 }}
                             animate={{ opacity: 1, y: 0 }}
                             transition={{ delay: 0.2 }}
-                            className="group relative overflow-hidden rounded-[2rem] border bg-card/30 backdrop-blur-sm transition-all hover:border-primary/30"
+                            className="group relative overflow-hidden rounded-[2.5rem] border border-muted bg-muted/20 transition-all hover:border-primary/50"
                         >
-                            <div className="flex flex-col lg:flex-row items-center gap-12 p-8 md:p-16">
-                                <div className="flex-1 space-y-8">
+                            <div className="flex flex-col lg:flex-row items-center gap-12 p-8 md:p-12">
+                                <div className="flex-1 space-y-6">
                                     <div className="inline-flex items-center gap-2 px-3 py-1 rounded-md bg-zinc-900 text-zinc-100 text-[10px] font-bold uppercase tracking-[0.2em] border border-zinc-800">
-                                        <Cloud className="size-3" />
-                                        <span>Core Infrastructure</span>
+                                        Core Infrastructure
                                     </div>
-                                    <h2 className="text-4xl md:text-6xl font-bold tracking-tight">ServAfri</h2>
-                                    <p className="text-lg text-muted-foreground leading-relaxed max-w-xl">
-                                        Bridging the Africa cloud gap. A localized, sovereign infrastructure engine built to empower the continent&apos;s engineers to scale and innovate on home soil.
+                                    <h2 className="text-4xl md:text-6xl font-bold tracking-tight">Big7 Cloud</h2>
+                                    <p className="text-lg text-muted-foreground leading-relaxed">
+                                        Fast, reliable, and sovereign cloud infrastructure localized for the continent. Deploy high-density compute and scalable networks with ease.
                                     </p>
-                                    <div className="flex flex-wrap gap-4">
-                                        <Button asChild size="lg" className="rounded-lg px-6 py-4 h-auto text-base font-bold shadow-lg transition-all hover:scale-105">
-                                            <Link href="/products/servafri">
+                                    <div className="flex flex-wrap gap-4 pt-4">
+                                        <Button asChild className="rounded-xl px-8">
+                                            <Link href="/products/cloud">
                                                 Learn More <ArrowRight className="ml-2 size-4" />
                                             </Link>
                                         </Button>
-                                        <Button variant="outline" size="lg" className="rounded-lg px-6 py-4 h-auto text-base font-bold" asChild>
-                                            <Link href="https://servafri.com" target="_blank">
-                                                Explore <Globe className="ml-2 size-4" />
+                                        <Button variant="outline" asChild className="rounded-xl px-8">
+                                            <Link href="https://big7technologies.com" target="_blank">
+                                                Visit big7technologies.com
                                             </Link>
                                         </Button>
                                     </div>
                                 </div>
-                                <div className="flex-1 relative w-full aspect-square lg:aspect-auto lg:h-[500px]">
-                                    <div className="absolute inset-0 bg-primary/5 rounded-3xl overflow-hidden border border-primary/10 group-hover:scale-[1.02] transition-transform duration-700">
-                                        <Image
-                                            src="/servafri-hero.jpg"
-                                            alt="ServAfri Product Preview"
+                                <div className="flex-1 w-full max-w-lg">
+                                    <div className="relative aspect-video rounded-3xl overflow-hidden border border-primary/10 shadow-2xl">
+                                        <Image 
+                                            src="/Big7 Technologies-hero.jpg"
+                                            alt="Big7 Cloud Product Preview"
                                             fill
-                                            className="object-cover opacity-90 group-hover:opacity-100 transition-opacity"
-                                        />
-                                    </div>
-
-                                    {/* Stats overlay */}
-                                    <div className="absolute top-8 right-8 bg-background/80 backdrop-blur border rounded-2xl p-4 shadow-2xl">
-                                        <p className="text-xs font-bold text-muted-foreground uppercase tracking-widest mb-1">Latency</p>
                                         <p className="text-2xl font-bold">{'<'}1.2ms</p>
                                     </div>
                                 </div>

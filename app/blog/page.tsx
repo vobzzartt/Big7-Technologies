@@ -5,17 +5,17 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
-  title: 'Blog | ServAfri',
-  description: 'Read the latest updates, engineering deep dives, and scaling stories from the ServAfri team.',
+  title: 'Blog | Big7 Technologies',
+  description: 'Read the latest updates, engineering deep dives, and scaling stories from the Big7 Technologies team.',
 }
 
 export default function BlogPage() {
   const posts = [
     {
-      title: "Rebuilding Africa’s Cloud Future — The Servafri Story",
+      title: "Rebuilding Africa’s Cloud Future — The Big7 Technologies Story",
       date: "October 13, 2025",
-      summary: "Africa has always been full of creativity, hustle, and raw talent. This is the gap that led to Servafri—the cloud platform created specifically for Africa.",
-      slug: "/blog/servafri-story"
+      summary: "Africa has always been full of creativity, hustle, and raw talent. This is the gap that led to Big7 Technologies—the cloud platform created specifically for Africa.",
+      slug: "/blog/Big7 Technologies-story"
     }
   ]
 
