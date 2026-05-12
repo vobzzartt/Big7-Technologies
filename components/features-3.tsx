@@ -1,64 +1,52 @@
 import { Card, CardContent, CardHeader } from '@/components/ui/card'
-import { Settings2, Sparkles, Zap } from 'lucide-react'
+import { Settings2, Sparkles, Zap, Shield, Globe, Network } from 'lucide-react'
 import { ReactNode } from 'react'
 
 export default function Features() {
     return (
-        <section className="bg-zinc-50 py-16 md:py-32 dark:bg-transparent">
-            <div className="@container mx-auto max-w-5xl px-6">
-                <div className="text-center">
-                    <h2 className="text-balance text-4xl font-semibold lg:text-5xl">Infrastructure that scales with your business</h2>
-                    <p className="mt-4">Reliable cloud infrastructure designed to support your applications and workloads without the complexity of managing hardware.</p>
+        <section className="bg-zinc-50 py-24 md:py-32 dark:bg-transparent border-t border-muted/50">
+            <div className="@container mx-auto max-w-6xl px-6">
+                <div className="text-center max-w-3xl mx-auto space-y-6">
+                    <h2 className="text-3xl md:text-5xl font-bold tracking-tight">Foundational Systems Engineering.</h2>
+                    <p className="text-lg text-muted-foreground leading-relaxed">
+                        Big7 Technologies builds the fundamental layers of modern computing. We ship reliable, high-scale systems that power the next generation of digital infrastructure.
+                    </p>
                 </div>
-                <Card className="@min-4xl:max-w-full @min-4xl:grid-cols-3 @min-4xl:divide-x @min-4xl:divide-y-0 mx-auto mt-8 grid max-w-sm divide-y overflow-hidden shadow-zinc-950/5 *:text-center md:mt-16">
-                    <div className="group shadow-zinc-950/5">
+                
+                <Card className="@min-4xl:max-w-full @min-4xl:grid-cols-3 @min-4xl:divide-x @min-4xl:divide-y-0 mx-auto mt-16 grid max-w-sm divide-y overflow-hidden shadow-sm *:text-center">
+                    <div className="group p-8">
                         <CardHeader className="pb-3">
-                            <CardDecorator>
-                                <Zap
-                                    className="size-6"
-                                    aria-hidden
-                                />
-                            </CardDecorator>
-
-                            <h3 className="mt-6 font-medium">Scalable Infrastructure</h3>
+                            <div className="size-12 rounded-xl bg-primary/10 flex items-center justify-center mx-auto mb-6 text-primary group-hover:scale-110 transition-transform">
+                                <Network className="size-6" />
+                            </div>
+                            <h3 className="font-bold text-lg">Distributed Systems</h3>
                         </CardHeader>
-
                         <CardContent>
-                            <p className="text-sm">Scale compute and storage resources based on demand. Adjust capacity in minutes without hardware procurement or long-term commitments.</p>
+                            <p className="text-sm text-muted-foreground leading-relaxed">Designing consensus models and high-availability systems for large-scale data orchestration.</p>
                         </CardContent>
                     </div>
 
-                    <div className="group shadow-zinc-950/5">
+                    <div className="group p-8">
                         <CardHeader className="pb-3">
-                            <CardDecorator>
-                                <Settings2
-                                    className="size-6"
-                                    aria-hidden
-                                />
-                            </CardDecorator>
-
-                            <h3 className="mt-6 font-medium">Secure by Default</h3>
+                            <div className="size-12 rounded-xl bg-primary/10 flex items-center justify-center mx-auto mb-6 text-primary group-hover:scale-110 transition-transform">
+                                <Shield className="size-6" />
+                            </div>
+                            <h3 className="font-bold text-lg">Sovereign Design</h3>
                         </CardHeader>
-
                         <CardContent>
-                            <p className="mt-3 text-sm">Built-in security controls and compliance features. Network isolation, encryption at rest and in transit, and automated security monitoring.</p>
+                            <p className="text-sm text-muted-foreground leading-relaxed">Building hardened networking and security layers designed for continental data trust.</p>
                         </CardContent>
                     </div>
 
-                    <div className="group shadow-zinc-950/5">
+                    <div className="group p-8">
                         <CardHeader className="pb-3">
-                            <CardDecorator>
-                                <Sparkles
-                                    className="size-6"
-                                    aria-hidden
-                                />
-                            </CardDecorator>
-
-                            <h3 className="mt-6 font-medium">High Availability</h3>
+                            <div className="size-12 rounded-xl bg-primary/10 flex items-center justify-center mx-auto mb-6 text-primary group-hover:scale-110 transition-transform">
+                                <Sparkles className="size-6" />
+                            </div>
+                            <h3 className="font-bold text-lg">Growth Platforms</h3>
                         </CardHeader>
-
                         <CardContent>
-                            <p className="mt-3 text-sm">Deploy across multiple data centers with automatic failover. Service level agreements guarantee uptime for mission-critical applications.</p>
+                            <p className="text-sm text-muted-foreground leading-relaxed">Engineering the underlying compute and logic that drives the next generation of AI-driven tools.</p>
                         </CardContent>
                     </div>
                 </Card>
@@ -66,14 +54,3 @@ export default function Features() {
         </section>
     )
 }
-
-const CardDecorator = ({ children }: { children: ReactNode }) => (
-    <div className="mask-radial-from-40% mask-radial-to-60% relative mx-auto size-36 duration-200 [--color-border:color-mix(in_oklab,var(--color-zinc-950)10%,transparent)] group-hover:[--color-border:color-mix(in_oklab,var(--color-zinc-950)20%,transparent)] dark:[--color-border:color-mix(in_oklab,var(--color-white)15%,transparent)] dark:group-hover:[--color-border:color-mix(in_oklab,var(--color-white)20%,transparent)]">
-        <div
-            aria-hidden
-            className="absolute inset-0 bg-[linear-gradient(to_right,var(--color-border)_1px,transparent_1px),linear-gradient(to_bottom,var(--color-border)_1px,transparent_1px)] bg-[size:24px_24px] dark:opacity-50"
-        />
-
-        <div className="bg-background absolute inset-0 m-auto flex size-12 items-center justify-center border-l border-t">{children}</div>
-    </div>
-)

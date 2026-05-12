@@ -8,11 +8,10 @@ import { cn } from '@/lib/utils'
 import { ThemeToggleButton } from './ThemeToggleButton'
 
 const menuItems = [
-    { name: 'Pricing', href: '/pricing' },
-    { name: 'Products', href: '/instances' },
+    { name: 'Research', href: 'https://research.big7technologies.com' },
+    { name: 'Products', href: '/products' },
+    { name: 'Careers', href: '/careers' },
     { name: 'Blog', href: '/blog' },
-    { name: 'Docs', href: 'https://docs.servafri.com' },
-    { name: 'Status', href: 'https://status.servafri.com' },
     { name: 'Contact', href: '/contact' },
 ]
 
@@ -79,30 +78,13 @@ export const HeroHeader = () => {
                                     ))}
                                 </ul>
                             </div>
-                            <div className="flex w-full flex-col space-y-3 sm:flex-row sm:gap-3 sm:space-y-0 md:w-fit">
-                                <Button
-                                    asChild
-                                    variant="outline"
-                                    size="sm"
-                                    className={cn(isScrolled && 'lg:hidden')}>
-                                    <Link href="https://console.servafri.com/sign-in">
-                                        <span>Login</span>
-                                    </Link>
-                                </Button>
+                             <div className="flex w-full flex-col space-y-3 sm:flex-row sm:gap-3 sm:space-y-0 md:w-fit">
                                 <Button
                                     asChild
                                     size="sm"
                                     className={cn(isScrolled && 'lg:hidden')}>
-                                    <Link href="/waitlist">
-                                        <span>Join the waitlist</span>
-                                    </Link>
-                                </Button>
-                                <Button
-                                    asChild
-                                    size="sm"
-                                    className={cn(isScrolled ? 'lg:inline-flex' : 'hidden')}>
-                                    <Link href="https://console.servafri.com/sign-in">
-                                        <span>Login</span>
+                                    <Link href="https://research.big7technologies.com">
+                                        <span>Research Lab</span>
                                     </Link>
                                 </Button>
                                 <ThemeToggleButton />

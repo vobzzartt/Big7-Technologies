@@ -49,15 +49,14 @@ export default function IntegrationsSection() {
                         </div>
                     </div>
                     <div className="bg-linear-to-t from-background relative z-20 mx-auto mt-12 max-w-lg space-y-6 from-55% text-center">
-                        <h2 className="text-balance text-3xl font-semibold md:text-4xl">Infrastructure and platform integrations</h2>
-                        <p className="text-muted-foreground">Support for standard APIs and protocols across cloud platforms, development tools, and enterprise systems.</p>
+                        <h2 className="text-balance text-3xl font-semibold md:text-4xl">Open Source Systems Research</h2>
+                        <p className="text-muted-foreground">We contribute foundational systems, consensus models, and distributed frameworks to the global engineering community.</p>
 
-                        <Button
-                            variant="outline"
-                            size="sm"
-                            asChild>
-                            <Link href="https://docs.servafri.com">View Documentation</Link>
-                        </Button>
+                        <Button asChild variant="outline" className="rounded-xl px-8">
+            <Link href="https://github.com/big7technologies" target="_blank">
+              Explore on GitHub
+            </Link>
+          </Button>
                     </div>
                 </div>
             </div>

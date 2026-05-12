@@ -1,250 +1,140 @@
+'use client'
+
+import React, { useState } from 'react'
+import { motion } from 'motion/react'
 import { HeroHeader } from '@/components/header'
 import FooterSection from '@/components/footer'
-import { Mail, MessageSquare, Clock, Globe } from 'lucide-react'
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card'
-import type { Metadata } from 'next'
-
-export const metadata: Metadata = {
-  title: 'Contact Us | ServAfri',
-  description: 'Contact ServAfri for support, sales inquiries, or general questions. Email us at hello@servafri.com',
-}
+import { Button } from '@/components/ui/button'
+import { Input } from '@/components/ui/input'
+import { Textarea } from '@/components/ui/textarea'
+import { Mail, MessageSquare, Send } from 'lucide-react'
 
 export default function ContactPage() {
-  return (
-    <>
-      <HeroHeader />
-      <main className="min-h-screen pt-24 md:pt-32">
-        <section className="py-16 md:py-32">
-          <div className="mx-auto max-w-5xl space-y-12 px-6 md:space-y-16">
-            <div className="space-y-6">
-              <h1 className="text-4xl font-medium lg:text-5xl">Contact Us</h1>
-              <p className="text-lg text-muted-foreground max-w-3xl">
-                Have questions about ServAfri? We're here to help. Reach out to our team for support, sales inquiries, or general questions.
-              </p>
-            </div>
+    const [isSubmitting, setIsSubmitting] = useState(false)
+    const [submitted, setSubmitted] = useState(false)
 
-            <div className="grid gap-6 md:grid-cols-2">
-              <Card>
-                <CardHeader>
-                  <div className="mb-4 flex size-12 items-center justify-center rounded-lg bg-primary/10">
-                    <Mail className="size-6 text-primary" />
-                  </div>
-                  <CardTitle>General Inquiries</CardTitle>
-                  <CardDescription>
-                    For general questions, support, or information about our services.
-                  </CardDescription>
-                </CardHeader>
-                <CardContent>
-                  <div className="space-y-4">
-                    <div>
-                      <p className="text-sm font-medium mb-2">Email</p>
-                      <a 
-                        href="mailto:hello@servafri.com" 
-                        className="text-primary hover:underline text-lg"
-                      >
-                        hello@servafri.com
-                      </a>
-                    </div>
-                    <div>
-                      <p className="text-sm font-medium mb-2">Response Time</p>
-                      <p className="text-sm text-muted-foreground">
-                        We typically respond within 24-48 hours during business days.
-                      </p>
-                    </div>
-                  </div>
-                </CardContent>
-              </Card>
+    const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+        e.preventDefault()
+        setIsSubmitting(true)
 
-              <Card>
-                <CardHeader>
-                  <div className="mb-4 flex size-12 items-center justify-center rounded-lg bg-primary/10">
-                    <MessageSquare className="size-6 text-primary" />
-                  </div>
-                  <CardTitle>Sales & Partnerships</CardTitle>
-                  <CardDescription>
-                    Interested in enterprise plans, partnerships, or custom solutions.
-                  </CardDescription>
-                </CardHeader>
-                <CardContent>
-                  <div className="space-y-4">
-                    <div>
-                      <p className="text-sm font-medium mb-2">Email</p>
-                      <a 
-                        href="mailto:hello@servafri.com" 
-                        className="text-primary hover:underline text-lg"
-                      >
-                        hello@servafri.com
-                      </a>
-                    </div>
-                    <div>
-                      <p className="text-sm font-medium mb-2">Subject Line</p>
-                      <p className="text-sm text-muted-foreground">
-                        Please include "Sales Inquiry" or "Partnership" in your subject line for faster routing.
-                      </p>
-                    </div>
-                  </div>
-                </CardContent>
-              </Card>
+        const formData = new FormData(e.currentTarget)
+        const data = {
+            name: formData.get('name'),
+            email: formData.get('email'),
+            subject: formData.get('subject'),
+            message: formData.get('message'),
+        }
 
-              <Card>
-                <CardHeader>
-                  <div className="mb-4 flex size-12 items-center justify-center rounded-lg bg-primary/10">
-                    <Globe className="size-6 text-primary" />
-                  </div>
-                  <CardTitle>Technical Support</CardTitle>
-                  <CardDescription>
-                    For technical issues, documentation questions, or API support.
-                  </CardDescription>
-                </CardHeader>
-                <CardContent>
-                  <div className="space-y-4">
-                    <div>
-                      <p className="text-sm font-medium mb-2">Email</p>
-                      <a 
-                        href="mailto:hello@servafri.com" 
-                        className="text-primary hover:underline text-lg"
-                      >
-                        hello@servafri.com
-                      </a>
-                    </div>
-                    <div>
-                      <p className="text-sm font-medium mb-2">Documentation</p>
-                      <a 
-                        href="https://docs.servafri.com" 
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="text-primary hover:underline text-sm"
-                      >
-                        docs.servafri.com
-                      </a>
-                    </div>
-                  </div>
-                </CardContent>
-              </Card>
+        try {
+            const res = await fetch('/api/contact', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify(data),
+            })
 
-              <Card>
-                <CardHeader>
-                  <div className="mb-4 flex size-12 items-center justify-center rounded-lg bg-primary/10">
-                    <Clock className="size-6 text-primary" />
-                  </div>
-                  <CardTitle>Business Hours</CardTitle>
-                  <CardDescription>
-                    Our team is available to assist you during these hours.
-                  </CardDescription>
-                </CardHeader>
-                <CardContent>
-                  <div className="space-y-3 text-sm">
-                    <div>
-                      <p className="font-medium">Monday - Friday</p>
-                      <p className="text-muted-foreground">9:00 AM - 6:00 PM UTC</p>
-                    </div>
-                    <div>
-                      <p className="font-medium">Weekends</p>
-                      <p className="text-muted-foreground">Limited support available</p>
-                    </div>
-                    <div className="pt-2">
-                      <p className="text-muted-foreground">
-                        For urgent issues outside business hours, please include "URGENT" in your subject line.
-                      </p>
-                    </div>
-                  </div>
-                </CardContent>
-              </Card>
-            </div>
+            if (res.ok) {
+                setSubmitted(true)
+            } else {
+                alert('Failed to send message. Please try again.')
+            }
+        } catch (error) {
+            alert('An error occurred. Please try again.')
+        } finally {
+            setIsSubmitting(false)
+        }
+    }
 
-            <div className="space-y-8 pt-8">
-              <div>
-                <h2 className="text-2xl font-medium mb-4">Getting Help</h2>
-                <div className="space-y-4 text-muted-foreground">
-                  <p>
-                    For the fastest response, please include relevant details in your email:
-                  </p>
-                  <ul className="list-disc list-inside space-y-2 ml-4">
-                    <li>Your account email or username</li>
-                    <li>Description of the issue or question</li>
-                    <li>Steps to reproduce (for technical issues)</li>
-                    <li>Error messages or logs (if applicable)</li>
-                    <li>Expected behavior vs. actual behavior</li>
-                  </ul>
+    return (
+        <div className="min-h-screen bg-background text-foreground selection:bg-primary/30">
+            <HeroHeader />
+            
+            <main className="relative pt-32 pb-24">
+                <div className="mx-auto max-w-6xl px-6">
+                    <div className="grid lg:grid-cols-2 gap-16 items-start">
+                        <div className="space-y-10">
+                            <div className="space-y-6">
+                                <div className="inline-flex items-center gap-2 px-3 py-1 rounded-md bg-zinc-900 text-zinc-100 text-[10px] font-bold uppercase tracking-[0.2em] border border-zinc-800">
+                                    Inquiries
+                                </div>
+                                <h1 className="text-4xl md:text-6xl font-bold tracking-tight">Collaborate with the Lab.</h1>
+                                <p className="text-lg text-muted-foreground leading-relaxed max-w-lg">
+                                    Whether you&apos;re interested in our systems research, looking to partner on sovereign infrastructure, or have questions about our product ecosystem, reach out to our engineering team.
+                                </p>
+                            </div>
+
+                            <div className="space-y-8 border-t pt-10">
+                                <div className="flex items-start gap-4">
+                                    <div className="size-5 mt-1 text-primary">
+                                        <Mail className="size-full" />
+                                    </div>
+                                    <div>
+                                        <h3 className="text-sm font-bold uppercase tracking-widest mb-1">General</h3>
+                                        <a href="mailto:hello@big7technologies.com" className="text-muted-foreground hover:text-primary transition-colors">
+                                            hello@big7technologies.com
+                                        </a>
+                                    </div>
+                                </div>
+                                <div className="flex items-start gap-4">
+                                    <div className="size-5 mt-1 text-primary">
+                                        <MessageSquare className="size-full" />
+                                    </div>
+                                    <div>
+                                        <h3 className="text-sm font-bold uppercase tracking-widest mb-1">Research</h3>
+                                        <a href="mailto:research@big7technologies.com" className="text-muted-foreground hover:text-primary transition-colors">
+                                            research@big7technologies.com
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div className="bg-card border rounded-2xl p-8 lg:p-10 shadow-sm">
+                            {submitted ? (
+                                <motion.div 
+                                    initial={{ opacity: 0 }}
+                                    animate={{ opacity: 1 }}
+                                    className="text-center py-12 space-y-4"
+                                >
+                                    <div className="size-12 rounded-full bg-primary/10 text-primary flex items-center justify-center mx-auto mb-6">
+                                        <Send className="size-6" />
+                                    </div>
+                                    <h2 className="text-xl font-bold">Message Received.</h2>
+                                    <p className="text-muted-foreground">Our team will review your inquiry and get back to you within 24 hours.</p>
+                                    <Button variant="link" onClick={() => setSubmitted(false)} className="mt-4">
+                                        Send another message
+                                    </Button>
+                                </motion.div>
+                            ) : (
+                                <form onSubmit={handleSubmit} className="space-y-5">
+                                    <div className="grid sm:grid-cols-2 gap-5">
+                                        <div className="space-y-2">
+                                            <label className="text-[10px] font-bold uppercase tracking-widest text-muted-foreground">Name</label>
+                                            <Input name="name" required placeholder="Full Name" className="bg-muted/30 border-muted rounded-lg h-11" />
+                                        </div>
+                                        <div className="space-y-2">
+                                            <label className="text-[10px] font-bold uppercase tracking-widest text-muted-foreground">Email</label>
+                                            <Input name="email" required type="email" placeholder="email@address.com" className="bg-muted/30 border-muted rounded-lg h-11" />
+                                        </div>
+                                    </div>
+                                    <div className="space-y-2">
+                                        <label className="text-[10px] font-bold uppercase tracking-widest text-muted-foreground">Subject</label>
+                                        <Input name="subject" required placeholder="Inquiry Subject" className="bg-muted/30 border-muted rounded-lg h-11" />
+                                    </div>
+                                    <div className="space-y-2">
+                                        <label className="text-[10px] font-bold uppercase tracking-widest text-muted-foreground">Message</label>
+                                        <Textarea name="message" required placeholder="How can we collaborate?" className="bg-muted/30 border-muted rounded-lg min-h-[120px] resize-none" />
+                                    </div>
+                                    <Button disabled={isSubmitting} type="submit" className="w-full h-11 font-bold text-sm">
+                                        {isSubmitting ? 'Processing...' : 'Submit Inquiry'}
+                                    </Button>
+                                </form>
+                            )}
+                        </div>
+                    </div>
                 </div>
-              </div>
-
-              <div>
-                <h2 className="text-2xl font-medium mb-4">Documentation & Resources</h2>
-                <div className="space-y-4 text-muted-foreground">
-                  <p>
-                    Before contacting support, check our documentation for answers to common questions:
-                  </p>
-                  <ul className="list-disc list-inside space-y-2 ml-4">
-                    <li>
-                      <a 
-                        href="https://docs.servafri.com" 
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="text-primary hover:underline"
-                      >
-                        Documentation
-                      </a>
-                      {' '}— API reference, guides, and tutorials
-                    </li>
-                    <li>
-                      <a 
-                        href="https://status.servafri.com" 
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="text-primary hover:underline"
-                      >
-                        Status Page
-                      </a>
-                      {' '}— Current system status and incident history
-                    </li>
-                  </ul>
-                </div>
-              </div>
-
-              <div>
-                <h2 className="text-2xl font-medium mb-4">Privacy & Data Protection</h2>
-                <div className="space-y-4 text-muted-foreground">
-                  <p>
-                    When contacting us, please do not include sensitive information such as passwords, API keys, or personal data that should be handled securely. Our support team will never ask for your password.
-                  </p>
-                  <p>
-                    All communications are handled in accordance with our privacy policy and data protection practices. For security-related concerns, please contact{' '}
-                    <a 
-                      href="mailto:security@servafri.com" 
-                      className="text-primary hover:underline"
-                    >
-                      security@servafri.com
-                    </a>
-                    {' '}directly.
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            <div className="rounded-lg border bg-muted/50 p-6 md:p-8">
-              <div className="space-y-4">
-                <h3 className="font-medium text-lg">Primary Contact</h3>
-                <div className="space-y-2">
-                  <p className="text-muted-foreground">
-                    For all inquiries, please email us at:
-                  </p>
-                  <p className="text-xl">
-                    <a 
-                      href="mailto:hello@servafri.com" 
-                      className="text-primary hover:underline font-medium"
-                    >
-                      hello@servafri.com
-                    </a>
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-      </main>
-      <FooterSection />
-    </>
-  )
+            </main>
+            
+            <FooterSection />
+        </div>
+    )
 }
-

@@ -1,34 +1,22 @@
-import { MetadataRoute } from 'next';
+import { MetadataRoute } from 'next'
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = 'https://servafri.com';
-  const currentDate = new Date().toISOString();
+  const baseUrl = 'https://big7technologies.com'
+  
+  const routes = [
+    '',
+    '/about',
+    '/careers',
+    '/contact',
+    '/products',
+    '/blog',
+    '/research',
+  ]
 
-  return [
-    {
-      url: baseUrl,
-      lastModified: currentDate,
-      changeFrequency: 'weekly',
-      priority: 1.0,
-    },
-    {
-      url: `${baseUrl}/about`,
-      lastModified: currentDate,
-      changeFrequency: 'monthly',
-      priority: 0.8,
-    },
-    {
-      url: `${baseUrl}/contact`,
-      lastModified: currentDate,
-      changeFrequency: 'monthly',
-      priority: 0.7,
-    },
-    {
-      url: `${baseUrl}/security`,
-      lastModified: currentDate,
-      changeFrequency: 'monthly',
-      priority: 0.8,
-    },
-  ];
+  return routes.map((route) => ({
+    url: `${baseUrl}${route}`,
+    lastModified: new Date(),
+    changeFrequency: 'weekly' as const,
+    priority: route === '' ? 1 : 0.8,
+  }))
 }
-

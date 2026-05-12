@@ -1,26 +1,30 @@
 export default function StatsSection() {
     return (
-        <section className="py-12 md:py-20">
-            <div className="mx-auto max-w-5xl space-y-8 px-6 md:space-y-16">
-                <div className="relative z-10 mx-auto max-w-xl space-y-6 text-center">
-                    <h2 className="text-4xl font-medium lg:text-5xl">Company Statistics</h2>
-                    <p>
-                        We provide cloud infrastructure that helps organizations deploy, manage, and scale their applications reliably and securely.
+        <section className="py-24 md:py-32 border-t border-muted/50">
+            <div className="mx-auto max-w-6xl space-y-16 px-6">
+                <div className="max-w-2xl space-y-6">
+                    <h2 className="text-3xl md:text-5xl font-bold tracking-tight">Company Statistics</h2>
+                    <p className="text-lg text-muted-foreground leading-relaxed">
+                        Big7 Technologies is a fast-moving engineering firm focused on shipping high-impact systems. Our small, dedicated team drives the infrastructure behind a growing ecosystem of products.
                     </p>
                 </div>
 
-                <div className="grid gap-12 divide-y *:text-center md:grid-cols-3 md:gap-2 md:divide-x md:divide-y-0">
-                    <div className="space-y-4">
-                        <div className="text-5xl font-bold">2024</div>
-                        <p>Founded</p>
+                <div className="grid gap-12 sm:grid-cols-2 lg:grid-cols-4 pt-12">
+                    <div className="space-y-3 border-l pl-8 border-primary/20">
+                        <div className="text-5xl font-bold tracking-tighter">2024</div>
+                        <p className="text-sm font-bold uppercase tracking-widest text-muted-foreground">Founded</p>
                     </div>
-                    <div className="space-y-4">
-                        <div className="text-5xl font-bold">Stealth</div>
-                        <p>Currently In</p>
+                    <div className="space-y-3 border-l pl-8 border-primary/20">
+                        <div className="text-5xl font-bold tracking-tighter">03</div>
+                        <p className="text-sm font-bold uppercase tracking-widest text-muted-foreground">Engineers</p>
                     </div>
-                    <div className="space-y-4">
-                        <div className="text-5xl font-bold">Open Beta</div>
-                        <p>Launching Soon</p>
+                    <div className="space-y-3 border-l pl-8 border-primary/20">
+                        <div className="text-5xl font-bold tracking-tighter">04</div>
+                        <p className="text-sm font-bold uppercase tracking-widest text-muted-foreground">Products Developed</p>
+                    </div>
+                    <div className="space-y-3 border-l pl-8 border-primary/20">
+                        <div className="text-5xl font-bold tracking-tighter text-primary">$0.000</div>
+                        <p className="text-sm font-bold uppercase tracking-widest text-muted-foreground">Total Funding</p>
                     </div>
                 </div>
             </div>
