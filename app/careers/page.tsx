@@ -10,16 +10,16 @@ import { Briefcase, Code, Terminal, Send, CheckCircle2, Github, Linkedin, Clock,
 
 const jobOpenings = [
     {
-        title: "Go Software Engineer",
-        description: "Build high-performance distributed systems, cloud infrastructure engines, and sovereign networking protocols.",
-        requirements: ["Strong proficiency in Go", "Experience with distributed systems", "Knowledge of concurrency patterns"],
-        icon: <Code className="size-5" />
-    },
-    {
         title: "Rust/C++ Systems Engineer",
         description: "Develop low-level systems logic, cryptographic protocols, and high-density compute orchestration layers.",
         requirements: ["Proficiency in Rust or C++", "Understanding of memory management", "Systems-level programming experience"],
         icon: <Terminal className="size-5" />
+    },
+    {
+        title: "Go Software Engineer",
+        description: "Build high-performance distributed systems, cloud infrastructure engines, and sovereign networking protocols.",
+        requirements: ["Strong proficiency in Go", "Experience with distributed systems", "Knowledge of concurrency patterns"],
+        icon: <Code className="size-5" />
     },
     {
         title: "Blockchain Engineer",

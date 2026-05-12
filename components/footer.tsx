@@ -6,13 +6,14 @@ const navLinks = [
     { title: 'Foundation', href: 'https://foundation.big7technologies.com' },
     { title: 'Products', href: '/products' },
     { title: 'Blog', href: '/blog' },
+    { title: 'Developers', href: '/developers' },
     { title: 'About', href: '/about' },
     { title: 'Careers', href: '/careers' },
     { title: 'Contact', href: '/contact' }
 ]
 
 const productLinks = [
-    { title: 'Big7 Cloud', href: '/products/cloud' },
+    { title: 'ServAfri Cloud', href: '/products/servafri' },
     { title: 'BigBoost Media', href: '/products/bigboost' },
     { title: 'Systems Research', href: 'https://research.big7technologies.com' }
 ]

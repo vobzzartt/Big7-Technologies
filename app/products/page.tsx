@@ -38,7 +38,7 @@ export default function ProductsPage() {
                     </div>
 
                     <div className="grid gap-12">
-                        {/* Big7 Cloud Product Card */}
+                        {/* ServAfri Product Card */}
                         <motion.div
                             initial={{ opacity: 0, y: 40 }}
                             animate={{ opacity: 1, y: 0 }}
@@ -50,19 +50,19 @@ export default function ProductsPage() {
                                     <div className="inline-flex items-center gap-2 px-3 py-1 rounded-md bg-zinc-900 text-zinc-100 text-[10px] font-bold uppercase tracking-[0.2em] border border-zinc-800">
                                         Core Infrastructure
                                     </div>
-                                    <h2 className="text-4xl md:text-6xl font-bold tracking-tight">Big7 Cloud</h2>
+                                    <h2 className="text-4xl md:text-6xl font-bold tracking-tight">ServAfri</h2>
                                     <p className="text-lg text-muted-foreground leading-relaxed">
-                                        Fast, reliable, and sovereign cloud infrastructure localized for the continent. Deploy high-density compute and scalable networks with ease.
+                                        Bridging the Africa cloud gap. A localized, sovereign infrastructure engine built to empower the continent&apos;s engineers to scale and innovate on home soil.
                                     </p>
-                                    <div className="flex flex-wrap gap-4 pt-4">
-                                        <Button asChild className="rounded-xl px-8">
-                                            <Link href="/products/cloud">
+                                    <div className="flex flex-row items-center gap-3 pt-4">
+                                        <Button asChild className="rounded-full px-5 py-2 text-sm md:px-8 md:py-6 md:text-base font-bold transition-all hover:scale-105 active:scale-95">
+                                            <Link href="/products/servafri">
                                                 Learn More <ArrowRight className="ml-2 size-4" />
                                             </Link>
                                         </Button>
-                                        <Button variant="outline" asChild className="rounded-xl px-8">
-                                            <Link href="https://big7technologies.com" target="_blank">
-                                                Visit big7technologies.com
+                                        <Button variant="outline" asChild className="rounded-full px-5 py-2 text-sm md:px-8 md:py-6 md:text-base font-bold transition-all hover:scale-105 active:scale-95">
+                                            <Link href="https://servafri.com" target="_blank">
+                                                Visit servafri.com
                                             </Link>
                                         </Button>
                                     </div>
@@ -70,10 +70,16 @@ export default function ProductsPage() {
                                 <div className="flex-1 w-full max-w-lg">
                                     <div className="relative aspect-video rounded-3xl overflow-hidden border border-primary/10 shadow-2xl">
                                         <Image 
-                                            src="/Big7 Technologies-hero.jpg"
-                                            alt="Big7 Cloud Product Preview"
+                                            src="/servafri-hero.jpg"
+                                            alt="ServAfri Product Preview"
                                             fill
-                                        <p className="text-2xl font-bold">{'<'}1.2ms</p>
+                                            className="object-cover"
+                                        />
+                                    </div>
+                                    <div className="absolute bottom-4 left-4 bg-black/70 backdrop-blur-md px-4 py-2 rounded-xl text-white">
+                                        <p className="text-2xl font-bold">
+                                            &lt;1.2ms
+                                        </p>
                                     </div>
                                 </div>
                             </div>
@@ -96,13 +102,13 @@ export default function ProductsPage() {
                                     <p className="text-lg text-muted-foreground leading-relaxed max-w-xl">
                                         Nigeria&apos;s and West Africa’s #1 AI Social Media Agency. Bridging the gap between human creativity and algorithmic growth with secure identity services.
                                     </p>
-                                    <div className="flex flex-wrap gap-4">
-                                        <Button asChild size="lg" className="rounded-lg px-6 py-4 h-auto text-base font-bold shadow-lg transition-all hover:scale-105">
+                                    <div className="flex flex-row items-center gap-3">
+                                        <Button asChild className="rounded-full px-5 py-2 text-sm md:px-8 md:py-6 md:text-base font-bold shadow-lg transition-all hover:scale-105 active:scale-95">
                                             <Link href="/products/bigboost">
                                                 Learn More <ArrowRight className="ml-2 size-4" />
                                             </Link>
                                         </Button>
-                                        <Button variant="outline" size="lg" className="rounded-lg px-6 py-4 h-auto text-base font-bold" asChild>
+                                        <Button variant="outline" className="rounded-full px-5 py-2 text-sm md:px-8 md:py-6 md:text-base font-bold transition-all hover:scale-105 active:scale-95" asChild>
                                             <Link href="https://bigboost.com.ng" target="_blank">
                                                 Explore <Globe className="ml-2 size-4" />
                                             </Link>

@@ -41,27 +41,22 @@ export default function HeroSection() {
                                 Engineering the Core Layers of Modern Technology
                             </h1>
                             
-                            <p className="text-lg md:text-xl text-muted-foreground leading-relaxed max-w-2xl mx-auto mb-12">
-                                Big7 Technologies is a systems engineering company building the foundational infrastructure behind large-scale fintech, cloud infrastructure, and distributed systems.
-                            </p>
 
-                            <div className="flex flex-col items-center justify-center gap-4 md:flex-row mb-24">
+                            <div className="flex flex-row items-center justify-center gap-3 mb-24">
                                 <Button
                                     asChild
                                     variant="outline"
-                                    size="lg"
-                                    className="rounded-lg px-10 py-6 h-auto text-base font-bold border-muted-foreground/20 hover:bg-muted/10">
+                                    className="rounded-full px-5 py-2.5 h-auto text-[13px] md:text-base md:px-10 md:py-6 font-bold border-muted-foreground/20 hover:bg-muted/10 transition-all active:scale-95">
                                     <Link href="https://research.big7technologies.com">
-                                        Explore Research
+                                        Research
                                     </Link>
                                 </Button>
                                 <Button
                                     asChild
                                     variant="outline"
-                                    size="lg"
-                                    className="rounded-lg px-10 py-6 h-auto text-base font-bold border-muted-foreground/20 hover:bg-muted/10">
+                                    className="rounded-full px-5 py-2.5 h-auto text-[13px] md:text-base md:px-10 md:py-6 font-bold border-muted-foreground/20 hover:bg-muted/10 transition-all active:scale-95">
                                     <Link href="/products">
-                                        View Products
+                                        Products
                                     </Link>
                                 </Button>
                             </div>
@@ -98,6 +93,7 @@ export default function HeroSection() {
                     display: flex;
                     width: max-content;
                     animation: marquee 40s linear infinite;
+                    will-change: transform;
                 }
             `}</style>
         </>

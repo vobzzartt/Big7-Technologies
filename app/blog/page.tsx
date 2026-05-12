@@ -12,10 +12,10 @@ export const metadata: Metadata = {
 export default function BlogPage() {
   const posts = [
     {
-      title: "Rebuilding Africa’s Cloud Future — The Big7 Technologies Story",
+      title: "Rebuilding Africa’s Cloud Future — The ServAfri Story",
       date: "October 13, 2025",
-      summary: "Africa has always been full of creativity, hustle, and raw talent. This is the gap that led to Big7 Technologies—the cloud platform created specifically for Africa.",
-      slug: "/blog/Big7 Technologies-story"
+      summary: "Africa has always been full of creativity, hustle, and raw talent. This is the gap that led to ServAfri—the cloud platform created specifically for Africa.",
+      slug: "/blog/servafri-story"
     }
   ]
 

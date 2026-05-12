@@ -9,7 +9,10 @@ export default function sitemap(): MetadataRoute.Sitemap {
     '/careers',
     '/contact',
     '/products',
+    '/products/servafri',
+    '/developers',
     '/blog',
+    '/blog/servafri-story',
     '/research',
   ]
 

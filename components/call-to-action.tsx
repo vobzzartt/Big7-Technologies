@@ -12,24 +12,22 @@ export default function CallToAction() {
                     </p>
                 </div>
                 
-                <div className="flex flex-col items-center justify-center gap-4 md:flex-row">
+                <div className="flex flex-row items-center justify-center gap-3">
                     <Button
                         asChild
                         variant="outline"
-                        size="lg"
-                        className="rounded-lg px-10 py-6 h-auto text-base font-bold border-muted-foreground/20 hover:bg-muted/10">
+                        className="rounded-full px-5 py-2.5 h-auto text-[13px] md:text-base md:px-10 md:py-6 font-bold border-muted-foreground/20 hover:bg-muted/10 transition-all active:scale-95">
                         <Link href="https://research.big7technologies.com">
-                            Explore Research
+                            Research
                         </Link>
                     </Button>
 
                     <Button
                         asChild
                         variant="outline"
-                        size="lg"
-                        className="rounded-lg px-10 py-6 h-auto text-base font-bold border-muted-foreground/20 hover:bg-muted/10">
+                        className="rounded-full px-5 py-2.5 h-auto text-[13px] md:text-base md:px-10 md:py-6 font-bold border-muted-foreground/20 hover:bg-muted/10 transition-all active:scale-95">
                         <a href="mailto:hello@big7technologies.com">
-                            Collaborate With Us
+                            Collaborate
                         </a>
                     </Button>
                 </div>
