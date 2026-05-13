@@ -18,7 +18,7 @@ export default function ServAfriProductPage() {
             <main className="relative">
                 {/* HERO SECTION */}
                 <section className="relative pt-24 pb-12 lg:pt-32 lg:pb-20">
-                    <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full h-[600px] bg-[radial-gradient(circle_at_center,var(--color-primary)_0%,transparent_70%)] opacity-[0.05] -z-10 blur-3xl" />
+                    <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full h-[600px] bg-[radial-gradient(circle_at_center,var(--color-primary)_0%,transparent_70%)] opacity-[0.05] -z-10 hidden md:block md:blur-3xl" />
 
                     <div className="mx-auto max-w-7xl px-6">
                         <div className="flex flex-col lg:flex-row items-center gap-16 lg:text-left text-center">

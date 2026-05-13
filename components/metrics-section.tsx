@@ -47,7 +47,7 @@ const LabTerminalOutput = () => {
   }, [])
 
   return (
-    <div className="h-full w-full font-mono text-xs sm:text-sm text-zinc-800 dark:text-zinc-200 overflow-hidden flex flex-col justify-end p-6 bg-background/40 will-change-contents">
+    <div className="h-full w-full font-mono text-xs sm:text-sm text-zinc-800 dark:text-zinc-200 overflow-hidden flex flex-col justify-end p-6 bg-background/40 will-change-[contents,transform]">
        <div className="flex flex-col gap-2.5">
           {lines.map((line, i) => (
              <p key={i} className={line.includes('SUCCESS') || line.includes('verified') || line.includes('online') ? 'text-green-600 dark:text-green-400 font-bold' : 'text-muted-foreground'}>{line}</p>
@@ -76,7 +76,7 @@ export function MetricsSection() {
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
           
           {/* Lab Terminal Block */}
-          <Card className="lg:col-span-2 border-muted shadow-sm flex flex-col bg-background/50 backdrop-blur-sm min-h-[450px] will-change-transform">
+          <Card className="lg:col-span-2 border-muted shadow-sm flex flex-col bg-background/95 md:bg-background/50 md:backdrop-blur-sm min-h-[450px] will-change-transform">
              <div className="flex items-center gap-2 px-5 py-4 border-b border-muted bg-muted/30 rounded-t-xl">
                  <div className="flex gap-2">
                     <div className="w-3 h-3 rounded-full bg-zinc-300"></div>
@@ -91,7 +91,7 @@ export function MetricsSection() {
           </Card>
 
           {/* Research Status Block */}
-          <Card className="lg:col-span-1 border-muted shadow-sm bg-background/50 backdrop-blur-sm flex flex-col overflow-hidden relative will-change-transform">
+          <Card className="lg:col-span-1 border-muted shadow-sm bg-background/95 md:bg-background/50 md:backdrop-blur-sm flex flex-col overflow-hidden relative will-change-transform">
              <div className="px-6 py-5 border-b border-muted bg-muted/20 flex justify-between items-center">
                  <span className="text-[10px] font-mono font-bold text-muted-foreground uppercase tracking-widest">LAB_STATUS</span>
                  <span className="text-[10px] font-bold text-primary flex items-center gap-2 tracking-[0.2em] uppercase"><Sparkles className="w-3 h-3" /> Real-Time</span>

@@ -23,12 +23,12 @@ export default function DevelopersPage() {
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 gap-8 mb-24">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-24">
             <div className="p-8 rounded-2xl border border-muted bg-muted/20 hover:border-primary/50 transition-all group">
-              <Cpu className="w-10 h-10 text-primary mb-6" />
-              <h2 className="text-2xl font-semibold mb-4">Core Compute Engine (C++)</h2>
+              <Shield className="w-10 h-10 text-primary mb-6" />
+              <h2 className="text-2xl font-semibold mb-4">APK-Proof Crypto</h2>
               <p className="text-muted-foreground mb-6">
-                High-density compute orchestration layer built for ultra-low latency and sovereign data processing.
+                Zero-trust mobile integrity and cryptographic verification tools for secure distributed applications.
               </p>
               <Button asChild variant="link" className="p-0 text-primary group-hover:gap-2 transition-all">
                 <Link href="https://github.com/big7technologies" target="_blank">
@@ -39,9 +39,22 @@ export default function DevelopersPage() {
 
             <div className="p-8 rounded-2xl border border-muted bg-muted/20 hover:border-primary/50 transition-all group">
               <Code className="w-10 h-10 text-primary mb-6" />
-              <h2 className="text-2xl font-semibold mb-4">Sovereign Protocol (Rust)</h2>
+              <h2 className="text-2xl font-semibold mb-4">Sovereign SDK (Rust)</h2>
               <p className="text-muted-foreground mb-6">
-                Distributed consensus and networking protocols designed for decentralized systems and regional data trust.
+                High-performance libraries for building decentralized consensus and regional data sovereignty layers.
+              </p>
+              <Button asChild variant="link" className="p-0 text-primary group-hover:gap-2 transition-all">
+                <Link href="https://github.com/big7technologies" target="_blank">
+                  View Source <ArrowRight className="w-4 h-4" />
+                </Link>
+              </Button>
+            </div>
+
+            <div className="p-8 rounded-2xl border border-muted bg-muted/20 hover:border-primary/50 transition-all group">
+              <Cpu className="w-10 h-10 text-primary mb-6" />
+              <h2 className="text-2xl font-semibold mb-4">Compute Engine (C++)</h2>
+              <p className="text-muted-foreground mb-6">
+                Foundational high-density orchestration for low-latency systems and regional compute nodes.
               </p>
               <Button asChild variant="link" className="p-0 text-primary group-hover:gap-2 transition-all">
                 <Link href="https://github.com/big7technologies" target="_blank">

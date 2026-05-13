@@ -25,7 +25,7 @@ export default function HeroSection() {
             <HeroHeader />
             <main className="overflow-x-hidden w-full">
                 <section className="relative pt-24 md:pt-36 pb-20">
-                    <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full h-[800px] bg-[radial-gradient(circle_at_center,var(--color-primary)_0%,transparent_75%)] opacity-[0.03] -z-10 blur-3xl" />
+                    <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full h-[800px] bg-[radial-gradient(circle_at_center,var(--color-primary)_0%,transparent_75%)] opacity-[0.03] -z-10 hidden md:block md:blur-3xl" />
                     
                     <div className="mx-auto max-w-7xl px-6">
                         <div className="text-center max-w-4xl mx-auto">
