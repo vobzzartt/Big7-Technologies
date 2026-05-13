@@ -1,13 +1,13 @@
 import { HeroHeader } from '@/components/header'
 import FooterSection from '@/components/footer'
-import { Code, Terminal, Cpu, Globe, ArrowRight } from 'lucide-react'
+import { Code, Terminal, Cpu, Globe, ArrowRight, Shield, Layers, Cloud } from 'lucide-react'
 import type { Metadata } from 'next'
 import Link from 'next/link'
 import { Button } from '@/components/ui/button'
 
 export const metadata: Metadata = {
   title: 'Developers | Big7 Technologies',
-  description: 'Open source systems, Rust libraries, C++ engines, and sovereign infrastructure research.',
+  description: 'Open source systems, native token protocols, and sovereign cloud infrastructure.',
 }
 
 export default function DevelopersPage() {
@@ -19,7 +19,7 @@ export default function DevelopersPage() {
           <div className="space-y-6 max-w-3xl mb-16 md:mb-24">
             <h1 className="text-4xl font-semibold lg:text-6xl tracking-tight">Open Source & Research</h1>
             <p className="text-lg text-muted-foreground">
-              Big7 Technologies is committed to open-source systems engineering. We build the foundational layers of modern compute in the open.
+              Big7 Technologies is committed to open-source systems engineering. We build the foundational layers of modern compute and value exchange in the open.
             </p>
           </div>
 
@@ -38,10 +38,10 @@ export default function DevelopersPage() {
             </div>
 
             <div className="p-8 rounded-2xl border border-muted bg-muted/20 hover:border-primary/50 transition-all group">
-              <Code className="w-10 h-10 text-primary mb-6" />
-              <h2 className="text-2xl font-semibold mb-4">Sovereign SDK (Rust)</h2>
+              <Layers className="w-10 h-10 text-primary mb-6" />
+              <h2 className="text-2xl font-semibold mb-4">Multi-chain Native Token</h2>
               <p className="text-muted-foreground mb-6">
-                High-performance libraries for building decentralized consensus and regional data sovereignty layers.
+                Native protocol layers for cross-chain liquidity and sovereign value exchange between distributed ecosystems.
               </p>
               <Button asChild variant="link" className="p-0 text-primary group-hover:gap-2 transition-all">
                 <Link href="https://github.com/big7technologies" target="_blank">
@@ -51,10 +51,10 @@ export default function DevelopersPage() {
             </div>
 
             <div className="p-8 rounded-2xl border border-muted bg-muted/20 hover:border-primary/50 transition-all group">
-              <Cpu className="w-10 h-10 text-primary mb-6" />
-              <h2 className="text-2xl font-semibold mb-4">Compute Engine (C++)</h2>
+              <Cloud className="w-10 h-10 text-primary mb-6" />
+              <h2 className="text-2xl font-semibold mb-4">Sovereign Cloud (K8s)</h2>
               <p className="text-muted-foreground mb-6">
-                Foundational high-density orchestration for low-latency systems and regional compute nodes.
+                Hardened Kubernetes distributions and compute orchestration layers for regional sovereign infrastructure.
               </p>
               <Button asChild variant="link" className="p-0 text-primary group-hover:gap-2 transition-all">
                 <Link href="https://github.com/big7technologies" target="_blank">
