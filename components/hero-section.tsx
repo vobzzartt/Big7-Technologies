@@ -8,12 +8,12 @@ import { motion } from 'motion/react'
 import { HeroHeader } from './header'
 
 const marqueeItems = [
-    { icon: <Database className="size-4" />, name: "Stablecoin Protocols" },
+    { icon: <Database className="size-4" />, name: "Blockchain Protocols" },
     { icon: <Cloud className="size-4" />, name: "Cloud Computing" },
-    { icon: <CreditCard className="size-4" />, name: "Fintech Systems" },
+    { icon: <CreditCard className="size-4" />, name: "Stablecoin" },
     { icon: <Layers className="size-4" />, name: "Blockchain Architecture" },
     { icon: <Smartphone className="size-4" />, name: "Embedded Systems" },
-    { icon: <Shield className="size-4" />, name: "Hardware Security" },
+    { icon: <Shield className="size-4" />, name: "Hardware Development" },
     { icon: <Cpu className="size-4" />, name: "High-Density Compute" },
     { icon: <Globe className="size-4" />, name: "Edge Networking" },
     { icon: <Code className="size-4" />, name: "AI Infrastructure" }
