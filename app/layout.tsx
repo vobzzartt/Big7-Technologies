@@ -21,10 +21,10 @@ export const viewport: Viewport = {
 export const metadata: Metadata = {
   metadataBase: new URL("https://big7technologies.com"),
 
-  title: "Big7 Technologies — Engineering the Future from Africa | Systems Research Lab",
+  title: "Big7 Technologies — Engineering the Future from Africa",
 
   description:
-    "Big7 Technologies is a technology research and systems lab founded by Victor Bodude. We build foundational infrastructure, sovereign system layers, and distributed protocols for the next decade of digital growth.",
+    "Big7 Technologies is a technology research and systems lab founded in 2024. We build foundational infrastructure, sovereign system layers, and distributed protocols for the next decade of digital growth.",
 
   keywords: [
     "Big7 Technologies",
