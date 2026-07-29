@@ -18,7 +18,7 @@ export default function ServafriStoryPage() {
 
             <h2>What ServAfri Represents</h2>
             <p>ServAfri is a cloud platform created specifically for Africa. The goal is simple: make cloud hosting easier, faster, and affordable for developers and startups on the continent.</p>
-            <p>The name ServAfri means “Serving Africa,” and it captures the heart behind the project. It’s not just a tech product. It’s a mission.</p>
+            <p>The name ServAfri means “Servers for Africa,” and it captures the heart behind the project. It’s not just a tech product. It’s a mission.</p>
 
             <h2>The Vision Behind ServAfri</h2>
             <p>ServAfri was born from one belief: Africa deserves its own cloud. Infrastructure that understands our reality, our economy, and the challenges we face—not something imported and adjusted.</p>
